@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live test</title>
+</head>
+<body>
+<div id="support" data-primary-color="ff0000"></div>
+
+<form class="form-confirmation" action="/test/bla" method="POST" data-title="Confirm" data-content="Really?" data-yes="Sure" data-no="No way!">
+    <input type="hidden" name="_token" value="1">
+    <button type="submit">Submit</button>
+</form>
+
+<form class="form-confirmation" action="/test/bla" method="POST">
+    <input type="hidden" name="_token" value="1">
+    <button type="submit">Submit Default</button>
+</form>
+
+<script src="https://cdn.ivanstanojevic.me/support/main.js"></script>
+</body>
+</html>
